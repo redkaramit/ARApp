@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARApp.WebApi", "ARApp.WebApi\ARApp.WebApi.csproj", "{60B13AB7-37A8-4732-8784-743450A6AA4C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARApp.FormsApp", "ARApp.FormsApp\ARApp.FormsApp.csproj", "{C211BEE5-F03D-418F-96F1-40E8608270E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ARApp.Test", "ARApp.Test\ARApp.Test.csproj", "{02CC1611-EB0F-4DA3-B381-1A75548554C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{60B13AB7-37A8-4732-8784-743450A6AA4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60B13AB7-37A8-4732-8784-743450A6AA4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60B13AB7-37A8-4732-8784-743450A6AA4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C211BEE5-F03D-418F-96F1-40E8608270E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C211BEE5-F03D-418F-96F1-40E8608270E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C211BEE5-F03D-418F-96F1-40E8608270E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C211BEE5-F03D-418F-96F1-40E8608270E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02CC1611-EB0F-4DA3-B381-1A75548554C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02CC1611-EB0F-4DA3-B381-1A75548554C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02CC1611-EB0F-4DA3-B381-1A75548554C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02CC1611-EB0F-4DA3-B381-1A75548554C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
