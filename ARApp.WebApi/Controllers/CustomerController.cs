@@ -7,17 +7,17 @@ using System.Web.Http;
 
 namespace ARApp.WebApi.Controllers
 {
+
     public class CustomerController : ApiController
-    {
-        // GET api/values
-        public IEnumerable<string> Get()
+    {        // GET api/values
+        public IEnumerable<Customer> Get()
         {
             List<Customer> custList = new List<Customer>();
             custList.Add(new Customer() { id = 1, name = "AR", address = "khar" });
             custList.Add(new Customer() { id = 2, name = "TJ", address = "KGBK" });
             custList.Add(new Customer() { id = 3, name = "YI", address = "khioy" });
             custList.Add(new Customer() { id = 4, name = "SR", address = "dtrt" });
-            return (IEnumerable<string>)custList.AsEnumerable();
+            return custList.AsEnumerable();
         }
 
         // GET api/values/5
