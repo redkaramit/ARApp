@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace ARApp.WebApi
 {
@@ -22,6 +23,13 @@ namespace ARApp.WebApi
 
             var appXmlType = config.Formatters.XmlFormatter.SupportedMediaTypes.FirstOrDefault(t => t.MediaType == "application/xml");
             config.Formatters.XmlFormatter.SupportedMediaTypes.Remove(appXmlType);
-        }
+
+            //config.EnableCors(new EnableCorsAttribute("*","*","*"));
+            config.EnableCors();
+            //Use at controller level
+            //[EnableCors(origins: "http://mywebclient.azurewebsites.net", headers: "*", methods: "*")]
+
+
     }
+}
 }
