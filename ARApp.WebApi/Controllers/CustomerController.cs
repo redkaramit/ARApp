@@ -1,15 +1,27 @@
-﻿using System;
+﻿using ARApp.WebApi.Filters;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 
+
 namespace ARApp.WebApi.Controllers
 {
 
     public class CustomerController : ApiController
-    {        // GET api/values
+    {
+        // GET api/values
+        /*
+            User-Agent: Fiddler
+            Host: localhost:49814
+            Authorization: basic QW1pdDpSZWRrYXI=
+
+            Note : QW1pdDpSZWRrYXI= , this strind is encoded using base64encoding using Encoding.GetEncoding("iso-8859-1");
+            check=> https://www.base64encode.org/
+             */
+        [CustomAuthenticateAttribute]
         public IEnumerable<Customer> Get()
         {
             List<Customer> custList = new List<Customer>();
